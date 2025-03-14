@@ -1,2 +1,84 @@
 # ecml2025imbalance
 Repo for the ECML 2025 class imbalance time series submission 
+
+
+The detail of imbalanced datasets. * indicates that the dataset is originally a two-class problem.
+
+         Dataset & Train Maj. & Train Min. & Test Maj. & Test Min. \\ \hline
+
+         ACSF1                          & 90             & 10             & 90            & 10            \\
+         AconityMINIPrinterLarge\_eq*   & 1585           & 176            & 781           & 86            \\
+         AconityMINIPrinterSmall\_eq*   & 423            & 47             & 209           & 23            \\
+         AllGestureWiimoteX\_eq         & 270            & 30             & 630           & 70            \\
+         AllGestureWiimoteY\_eq         & 270            & 30             & 630           & 70            \\
+         AllGestureWiimoteZ\_eq         & 270            & 30             & 630           & 70            \\
+         AsphaltObstaclesUni\_eq        & 279            & 31             & 280           & 31            \\
+         AsphaltPavementTypeUni\_eq     & 647            & 71             & 648           & 72            \\
+         AsphaltRegularityUni\_eq*      & 381            & 42             & 381           & 42            \\
+         ChlorineConcentration          & 353            & 39             & 2954          & 328           \\
+         Computers*                     & 125            & 13             & 125           & 13            \\
+         Covid3Month\_disc              & 104            & 11             & 44            & 4             \\
+         CricketX                       & 342            & 38             & 243           & 27            \\
+         CricketY                       & 252            & 28             & 333           & 37            \\
+         CricketZ                       & 288            & 32             & 297           & 33            \\
+         Crop                           & 2700           & 300            & 6300          & 700           \\
+         DistalPhalanxOutlineAgeGroup   & 270            & 30             & 124           & 13            \\
+         DistalPhalanxOutlineCorrect*   & 378            & 42             & 161           & 17            \\
+         DistalPhalanxTW                & 261            & 29             & 121           & 13            \\
+         EOGHorizontalSignal            & 270            & 30             & 270           & 30            \\
+         EOGVerticalSignal              & 270            & 30             & 270           & 30            \\
+         Earthquakes*                   & 264            & 29             & 104           & 11            \\
+         ElectricDeviceDetection*       & 543            & 60             & 3238          & 359           \\
+         ElectricDevices                & 6695           & 743            & 5755          & 639           \\
+         EthanolLevel                   & 378            & 42             & 374           & 41            \\
+         FaceAll                        & 360            & 40             & 648           & 72            \\
+         FiftyWords                     & 398            & 44             & 398           & 44            \\
+         Fish                           & 149            & 16             & 151           & 16            \\
+         FloodModeling1\_disc*           & 344            & 38             & 151           & 16            \\
+         FloodModeling2\_disc*           & 369            & 41             & 135           & 15            \\
+         FloodModeling3\_disc*           & 329            & 36             & 126           & 14            \\
+         FordA*                         & 1846           & 205            & 681           & 75            \\
+         FordB*                         & 1860           & 206            & 409           & 45            \\
+         GestureMidAirD1\_eq             & 144            & 16             & 90            & 10            \\
+         GestureMidAirD2\_eq             & 144            & 16             & 90            & 10            \\
+         GestureMidAirD3\_eq             & 144            & 16             & 90            & 10            \\
+         GesturePebbleZ1\_eq             & 110            & 12             & 143           & 15            \\
+         GesturePebbleZ2\_eq             & 120            & 13             & 133           & 14            \\
+         HandOutlines*                  & 638            & 70             & 237           & 26            \\
+         Haptics                        & 137            & 15             & 248           & 27            \\
+         InsectWingbeatSound            & 180            & 20             & 1620          & 180           \\
+         KeplerLightCurves              & 153            & 17             & 72            & 8             \\
+         LargeKitchenAppliances         & 250            & 27             & 250           & 27            \\
+         MedicalImages                  & 315            & 35             & 683           & 75            \\
+         MelbournePedestrian\_nmv        & 882            & 98             & 1710          & 190           \\
+         MiddlePhalanxOutlineAgeGroup   & 345            & 38             & 117           & 13            \\
+         MiddlePhalanxOutlineCorrect*   & 388            & 43             & 166           & 18            \\
+         MixedShapesRegularTrain        & 400            & 44             & 1967          & 218           \\
+         NonInvasiveFetalECGThorax1     & 324            & 36             & 432           & 48            \\
+         NonInvasiveFetalECGThorax2     & 324            & 36             & 432           & 48            \\
+         OSULeaf                        & 166            & 18             & 210           & 23            \\
+         PLAID\_eq                       & 171            & 19             & 171           & 19            \\
+         PhalangesOutlinesCorrect*      & 1172           & 130            & 526           & 58            \\
+         PhoneHeartbeatSound            & 251            & 27             & 100           & 11            \\
+         PowerCons*                     & 90             & 10             & 90            & 10            \\
+         ProximalPhalanxOutlineAgeGroup & 328            & 36             & 153           & 17            \\
+         ProximalPhalanxOutlineCorrect* & 406            & 45             & 199           & 22            \\
+         RefrigerationDevices           & 250            & 27             & 250           & 27            \\
+         ScreenType                     & 250            & 27             & 250           & 27            \\
+         SemgHandGenderCh2*             & 150            & 16             & 390           & 43            \\
+         SemgHandMovementCh2            & 375            & 41             & 375           & 41            \\
+         SemgHandSubjectCh2             & 360            & 40             & 360           & 40            \\
+         SharePriceIncrease*            & 663            & 73             & 663           & 73            \\
+         SmallKitchenAppliances         & 250            & 27             & 250           & 27            \\
+         StarLightCurves                & 848            & 94             & 7059          & 784           \\
+         Strawberry*                    & 394            & 43             & 238           & 26            \\
+         SwedishLeaf                    & 261            & 29             & 414           & 46            \\
+         SyntheticControl               & 250            & 27             & 250           & 27            \\
+         Tools                          & 266            & 29             & 117           & 13            \\
+         TwoPatterns                    & 729            & 81             & 2965          & 329           \\
+         UWaveGestureLibraryX           & 774            & 86             & 3145          & 349           \\
+         UWaveGestureLibraryY           & 774            & 86             & 3145          & 349           \\
+         UWaveGestureLibraryZ           & 774            & 86             & 3145          & 349           \\
+         Wafer*                         & 873            & 97             & 5499          & 611           \\
+         WormsTwoClass*                 & 105            & 11             & 44            & 4             \\
+         Yoga*                          & 163            & 18             & 1607          & 178           \\
