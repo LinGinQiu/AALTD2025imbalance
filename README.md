@@ -82,3 +82,17 @@ The detail of imbalanced datasets. * indicates that the dataset is originally a 
          Wafer*                         & 873            & 97             & 5499          & 611           \\
          WormsTwoClass*                 & 105            & 11             & 44            & 4             \\
          Yoga*                          & 163            & 18             & 1607          & 178           \\
+
+parameters
+
+        % Classifier  & Short Name & Parameters \\ \hline \hline
+        % 1-NN DTW    & DTW        &  Warping window: Full\\ \hline
+        % Proximity Forest &  PF & Number of trees: 100, Number of splits: 5 \\ \hline
+        % FreshPRINCE & FP & Classifier: Rotation Forest with 200 trees, Parameter set: comprehensive \\ \hline
+        % H-InceptionTime & H-IT & Ensemble size: 5, Batch size: 64, Inception modules: 6, Kernel size: 40, Max pooling size: 3, Number of epochs: 1500, Number of layers: 3, Inception filters: 32 \\ \hline
+        % QUANT   & Quant & Classifier: Extra trees with 200 trees, Interval depth: 6, Quantile divisor: 4 \\ \hline
+        % WEASEL V2.0 & W2 & Classifier: Logistic regression, Alphabet size: 2, Max feature count: 30000 \\ \hline
+        % Random Dilated Shapelet Transform   & RDST & Number of shapelets: 10000, Normalization chance: 0.8, Alpha similarity: 0.5 \\ \hline
+        % HIVE-COTE V2    & HC2 & Alpha: 4 \\ \hline
+        % MultRocket-Hydra    & MRHydra & Classifier: Ridge with cross-validation, MR kernels: 10000, g: Hydra groups, Hydra kernels per group: 8 \\  \hline
+        % Rotation Forest & RotF & Number of trees: 200 \\ \hline
