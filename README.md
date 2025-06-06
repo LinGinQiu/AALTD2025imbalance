@@ -1,6 +1,6 @@
 # Webpage for "e-SMOTE: a train set rebalancing algorithm for  time series classification"
 
-Repository for ECML-PKDD 2025 submission 983.
+Repository for AALTD 2025 submission Paper ID: 41.
 
 ## Datasets
 
