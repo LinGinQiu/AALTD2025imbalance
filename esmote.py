@@ -1,18 +1,15 @@
 from collections import OrderedDict
 from typing import Optional, Union
-
 import numpy as np
 from numba import prange
 from sklearn.utils import check_random_state
 
-from tsml_eval._wip.rt.classification.distance_based import KNeighborsTimeSeriesClassifier
-from tsml_eval._wip.rt.clustering.averaging._ba_utils import _get_alignment_path
+from esmote._wip.rt.classification.distance_based import KNeighborsTimeSeriesClassifier
+from esmote._wip.rt.clustering.averaging._ba_utils import _get_alignment_path
 from aeon.transformations.collection import BaseCollectionTransformer
+from esmote._wip.rt.utils._threading import threaded
 
 __all__ = ["ESMOTE"]
-
-from tsml_eval._wip.rt.utils._threading import threaded
-
 
 class ESMOTE(BaseCollectionTransformer):
     """
@@ -242,17 +239,3 @@ if __name__ == "__main__":
     print(X_resampled.shape)
     print(np.unique(y_resampled,return_counts=True))
     stop = ""
-    # === Multivariate SMOTE Verification ===
-    print("\n=== Multivariate SMOTE alignment test with near-identical channels ===")
-    base = np.random.randn(30, 50)
-    X = np.stack([base, base + np.random.normal(0, 1e-5, size=base.shape)], axis=1)
-    y = np.array([0] * 20 + [1] * 10)
-
-    smote.fit(X, y)
-    X_resampled, y_resampled = smote.transform(X, y)
-
-    new_samples = X_resampled[len(X):]
-    diffs = new_samples[:, 0, :] - new_samples[:, 1, :]
-    std_dev = np.std(diffs, axis=1)
-
-    print("Mean std deviation across channels (should be < 1e-4 if aligned):", np.mean(std_dev))
