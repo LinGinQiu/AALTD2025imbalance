@@ -319,16 +319,11 @@ def _generate_samples(
 
 if __name__ == "__main__":
     # Example usage
-    n_samples = 100  # Total number of labels
-    majority_num = 90  # number of majority class
-    minority_num = n_samples - majority_num  # number of minority class
-    np.random.seed(42)
+    from aeon.datasets import load_from_ts_file
+    X_train, y_train = load_from_ts_file('UCR_Imbalanced_9_1/ACSF1/ACSF1_TRAIN.ts')
+    print(np.unique(y_train, return_counts=True))
+    esmote = ESMOTE(n_neighbors=5, random_state=1, distance="msm")
 
-    X = np.random.rand(n_samples, 1, 10)
-    y = np.array([0] * majority_num + [1] * minority_num)
-    print(np.unique(y, return_counts=True))
-    smote = ESMOTE(n_neighbors=5, random_state=1, distance="msm")
-
-    X_resampled, y_resampled = smote.fit_transform(X, y)
+    X_resampled, y_resampled = esmote.fit_transform(X_train, y_train)
     print(X_resampled.shape)
     print(np.unique(y_resampled,return_counts=True))
