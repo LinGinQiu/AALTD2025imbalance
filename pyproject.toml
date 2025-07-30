@@ -2,7 +2,7 @@
 name = "esmote"
 version = "0.1.0"
 requires-python = ">=3.7"
-description = "A Python package for generating synthetic samples in imbalanced datasets using the ESMOTE algorithm."
+description = "AALTD imblanced classification ESMOTE:Generating synthetic samples in imbalanced datasets"
 dependencies = [
     "aeon",
 ]
